@@ -37,7 +37,7 @@ function Products() {
     dispatch(addProduct({
       id: parseInt(id), // แปลงค่า id ให้เป็น integer
       name,
-      price,
+      price: `$${price}`, // ใช้การเชื่อมสตริงธรรมดาเพื่อเพิ่มสัญลักษณ์ $
       description
     }));
 
